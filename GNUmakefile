@@ -1,7 +1,7 @@
 
 SUBPROJECTS := $(shell ./subprojects.sh)
 
-all: $(SUBPROJECTS)
+all: $(SUBPROJECTS) common.mk
 	for each in $(SUBPROJECTS); do make -C $$each; done
 .PHONY: all clean ignore
 

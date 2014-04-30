@@ -4,6 +4,10 @@ CC := $(shell ./compiler.sh)
 C_FILES := $(wildcard *.c)
 HEADERS := $(wildcard *.h)
 
+CPPFLAGS += -I.
+CFLAGS += -std=gnu99
+LDFLAGS += -lm -lpthread
+
 OBJS := $(patsubst %.c,%.c.o,$(C_FILES))
 
 all: $(TARGET)
