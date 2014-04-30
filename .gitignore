@@ -1,0 +1,11 @@
+# OS X files
+.DS_Store
+
+# Intermediates
+*.o
+*.d
+*.dSYM
+
+# Targets
+
+reorder
